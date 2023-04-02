@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/company_profile.css') }}">
+    <link rel="icon" type="image/icon" sizes="16x16" href="{{ asset('../../public/images/company_profile/favicon.png') }}">
     <title>株式会社リード</title>
-    <link rel="icon" type="image/icon" href="../images/favicon.png">
-    <link rel="stylesheet"  href="../css/company_profile.css">
 </head>
 <body>
     <!-- elements at the top -->
