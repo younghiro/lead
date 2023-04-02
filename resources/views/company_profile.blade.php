@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>株式会社リード</title>
-    <link rel="icon" type="image/icon" href="../resources/images/favicon.png">
-    <link rel="stylesheet"  href="../resources/css/company_profile.css">
+    <link rel="icon" type="image/icon" href="../images/favicon.png">
+    <link rel="stylesheet"  href="../css/company_profile.css">
 </head>
 <body>
     <!-- elements at the top -->
     <div class="header">
-        <div class="compay-logo">
-            <img src="" alt="株式会社リード"/>
-        </div>
+        <!-- <div class="compay-logo">
+            <img src="../images/tentative_logo.png" alt="株式会社リード" width="250" height="250"/>
+        </div> -->
         <div class="top-links">
             <ul class="list">
                 <li><a href="https://google.com">ホーム</a></li>
@@ -32,7 +32,7 @@
             <ul>
                 <h3>CONTENT</h3>  
                 <li><span><a href="#about-company-title">ごあいさつ</a></span></li>
-                <li><span><a href="#Philo-title">経営理念</a></span></li>
+                <li><span><a href="#philo-title">経営理念</a></span></li>
                 <li><span><a href="#copany-detail-title">会社概要</a></span></li>
             </ul>
             </nav>
@@ -45,8 +45,22 @@
         <div class="about-company">
             <h2 id="about-company-title">会社概要<span class="subtitle">COMPANY</span></h2>
             <p>
-                私たちは愛知県一宮市の会社です。<br>
-                <span class="CEO-name">名前</span>
+                株式会社リードは、お客様の住まいに関する悩みや不安を解消するために、お風呂やトイレに特化したリフォーム会社です。<br>
+                お客様からのご要望やご相談には、迅速かつ丁寧に対応し、最適なリフォームプランをご提案いたします。<br>
+                およそ年間400件のご注文をいただいており、そのスピードは業界でもトップクラスです。<br>
+                私たちは、お客様のニーズに合わせた施工内容や工期をしっかりとご説明し、ご満足いただける仕上がりを目指しています。<br>
+
+                風呂やトイレなどの水まわりのリフォームは、住まいの快適さや清潔感を左右する重要なポイントです。<br>
+                株式会社リードにお任せいただければ、業界15年の確かな技術力と知識を低価格の施工サービスでご提供し、お客様にとって理想的な住まいを実現いたします。<br>
+                また、リフォーム後のアフターフォローにも力を入れ、お客様に安心して暮らしていただけるように全力でサポート致します。<br>
+
+                ぜひ多くの皆様との出会いがありますよう、お問い合わせお待ちいたしております。<br><br>
+                
+                <span class="CEO-name">
+                    株式会社リード<br>
+                    代表取締役<br>
+                    加藤　真二
+                </span>
             </p>
         </div>
         <div class="philosophy">
@@ -62,9 +76,8 @@
   
                 <dt>事業内容</dt>
                 <dd>
-                    ・電気温水器<br>
-                    ・エコキュート販売・修理取付<br>
-                    ・リフォーム全般<br>
+                    ○ 電気温水器・エコキュート販売・修理取付<br>
+                    ○ リフォーム全般<br>
                     ※個人所有物損害物の復旧工事・調査・鑑定
                     保険会社からの一報より迅速に初動対応し、被害者との打ち合せ
                     仮復旧工事・養生工事・現場清掃等の対応をします。<br>
