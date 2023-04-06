@@ -1,0 +1,386 @@
+html {
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+body {
+  background-color: ivory;
+  display: block;
+  color: #0f3668;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #0f3668;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+.header {
+  margin: 0;
+  padding: 50px 0 0;
+  width: 100%;
+  display: block;
+}
+
+.left {
+  width: 20%;
+  height: 300px;
+  display: block;
+
+  position: relative;
+  left: 30px;
+}
+
+.middle {
+  padding: 10px 10px 10px;
+  width: 70%;
+  display: block;
+
+  position: relative;
+  bottom: 300px;
+  left: 250px;
+}
+
+.left-content h3 {
+  color: #0f3668;
+  text-align: center;
+  font-size: 10px;
+}
+
+.left-content h3::before {
+  content: '';
+  width: 22px;
+  height: 0.5px;
+  background-color: #0f3668;
+  display: inline-block;
+  margin: 3px;
+}
+
+.left-content h3::after {
+  content: '';
+  width: 22px;
+  height: 0.5px;
+  background-color: #0f3668;
+  display: inline-block;
+  margin: 3px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  writing-mode: vertical-rl;
+  justify-content: space-between;
+
+  position: relative;
+  left: 80%;
+}
+
+.list li {
+  font-size: 14px;
+  text-align: top;
+  list-style: none;
+  margin: 2px;
+  padding: 3px;
+}
+
+.company-detail {
+  width: 100%;
+}
+
+.detail-list {
+  font-size: 14px;
+  color: 0f3668;
+  line-height: 2;
+}
+
+@media print, screen and (min-width: 480px) {
+  .detail-list {
+    font-size: 14px;
+    line-height: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media print, screen and (min-width: 1020px) {
+  .detail-list {
+    font-size: 14px;
+    line-height: 28px;
+    line-height: 2.8rem;
+  }
+}
+
+.detail-list dt {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #0f3668;
+}
+
+@media print, screen and (min-width: 480px) {
+  .detail-list dt {
+    margin-bottom: 0;
+    padding: 10px 0;
+    width: 21%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.detail-list dd {
+  margin-bottom: 30px;
+}
+
+@media print, screen and (min-width: 480px) {
+  .detail-list dd {
+    margin-bottom: 0;
+    padding: 10px 0;
+    width: 71%;
+    border-bottom: 1px solid #0f3668;
+  }
+}
+
+.content-navigator {
+  margin: 0 auto;
+  padding: 0;
+  width: 15%;
+
+  position: fixed;
+}
+
+@media (max-width: 768px) { /* 画面サイズが768px以下の場合 */
+  .left-content {
+    flex-direction: column; /* 縦並びにする */
+  }
+  
+  .content-navigator {
+    display: none; /* sidebarを非表示にする */
+  }
+  
+  .middle {
+    width: 100%; /* コンテンツを100%に広げる */
+    left: auto;
+  }
+}
+
+.content-navigator ul {
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.content-navigator ul li {
+  margin: 0 0 10px 0;
+  padding: 0;
+  display: block;
+}
+
+.content-navigator ul li a {
+  width: 100%;
+  border: 1px solid #649bb1;
+  border-radius: 10px;
+  font-size: 12px;
+  font-size: 0.9rem;
+  line-height: 28px;
+  line-height: 2rem;
+  color: #0f3668;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  position: relative;
+}
+
+.content-navigator ul li a::before, .content-navigator ul li a::after {
+  content: '';
+  height: 1px;
+  background-color: #0f3668;
+  display: block;
+  position: absolute;
+}
+
+.content-navigator ul li a::before {
+  width: 9px;
+  top: 50%;
+  left: 10px;
+}
+
+.content-navigator ul li a::after {
+  width: 4px;
+  top: 50%;
+  left: 14px;
+  transform: rotate(60deg);
+  transform-origin: right bottom;
+}
+
+.content-navigator ul li a:hover {
+  background-color: #649bb1;
+  color: #fff;
+  text-decoration: none;
+  opacity: .7;
+  transition: opacity .3s linear, background-color .3s linear;
+}
+
+.content-navigator ul li a:hover::before, .content-navigator ul li a:hover::after {
+  background-color: #fff;
+}
+
+.subtitle {
+  font-size: 8px;
+}
+
+.subtitle::before {
+  content: '';
+  width: 22px;
+  height: 0.5px;
+  background-color: #0f3668;
+  display: inline-block;
+  margin: 3px;
+}
+
+.subtitle::after {
+  content: '';
+  width: 22px;
+  height: 0.5px;
+  background-color: #0f3668;
+  display: inline-block;
+  margin: 3px;
+}
+
+.CEO-name {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* チェックボックス隠す */
+#menu-btn-check {
+  display: none;
+}
+
+@media (max-width: 768px) { /* 画面サイズが768px以下の場合 */
+
+  /* middleの横幅を調整 */
+  .middle {
+    width: auto;
+  }
+  
+  /* listクラスのやつを横書きにする */
+  .list {
+    writing-mode: horizontal-tb;
+    justify-content: center;
+    left: 0;
+  }
+
+  /* 三本線ボタンの実装 */
+  .menu-btn {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      height: 50px;
+      width: 50px;
+      justify-content: center;
+      align-items: center;
+      z-index: 90;
+      background-color: #0f3668;
+  }
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 25px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      position: absolute;
+  }
+  .menu-btn span:before {
+      bottom: 8px;
+  }
+  .menu-btn span:after {
+      top: 8px;
+  }
+
+  /* ×マークにする */
+  #menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+  }
+  #menu-btn-check:checked ~ .menu-btn span::before {
+      bottom: 0;
+      transform: rotate(45deg);
+  }
+  #menu-btn-check:checked ~ .menu-btn span::after {
+      top: 0;
+      transform: rotate(-45deg);
+  }
+
+  /* チェックボックス隠す */
+  #menu-btn-check {
+      display: none;
+  }
+
+  /* メニューの実装 */
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #0f3668;
+  }
+  .menu-content ul {
+      padding: 70px 10px 0;
+  }
+  .menu-content ul li {
+      border-bottom: solid 1px #ffffff;
+      list-style: none;
+  }
+  .menu-content ul li a {
+      display: block;
+      width: 100%;
+      font-size: 15px;
+      box-sizing: border-box;
+      color:#ffffff;
+      text-decoration: none;
+      padding: 9px 15px 10px 0;
+      position: relative;
+  }
+  .menu-content ul li a::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-top: solid 2px #ffffff;
+      border-right: solid 2px #ffffff;
+      transform: rotate(45deg);
+      position: absolute;
+      right: 11px;
+      top: 16px;
+  }
+
+  /* メニューを画面外に */
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #0f3668;
+    transition: all 0.5s;/*アニメーション設定*/
+  }
+
+  /* ボタンタップ時にメニュー表示 */
+  #menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+  }
+}
