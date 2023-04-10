@@ -9,13 +9,12 @@
     <link rel="icon" type="image/icon" sizes="16x16" href="{{ asset('../../public/images/company_profile/favicon.png') }}">
     <title>株式会社リード</title>
 </head>
-<body>
+<header>
     <!-- elements at the top -->
-    <div class="header">
-        <!-- <div class="compay-logo">
-            <img src="../images/tentative_logo.png" alt="株式会社リード" width="250" height="250"/>
-        </div> -->
-        <div class="top-links">
+    <div class="humburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <div class="menu-content">
             <ul class="list">
                 <li><a href="https://google.com">ホーム</a></li>
                 <li><a href="https://google.com">サービスの流れ</a></li>
@@ -25,7 +24,8 @@
         </div>
     </div>
     <!-- elements in the top -->
-
+</header>
+<body>
     <!-- elements in the left -->
     <div class="left">
         <div class="left-content">
@@ -112,20 +112,6 @@
   
                 <dt>代表取締役</dt>
                 <dd>加藤真二</dd>
-  
-                <dt>宅地建物取引業<br>免許証番号</dt>
-                <dd></dd>
-  
-                <dt>物件情報掲載サイト</dt>
-                <dd>
-                  ○ <br>
-                  ○ <br>
-                  ○ <br>
-                  ○ <br>
-                  ○ <br>
-                  ○ <br>
-                  ○ <br>
-                </dd>
               </dl>
         </div>
     </div>
