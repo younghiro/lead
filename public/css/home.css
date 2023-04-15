@@ -1,3 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  box-sizing: border-box;
+}
+body *{
+  box-sizing: inherit; /* box-sizingの値は継承されないので明示的に設定 */
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -23,9 +34,10 @@ li {
   position: relative;
 }
 
-.header_top{
+/* .header_top{
   height: ;
-}
+} */
+
 
 .header_title {
   text-align: center;
@@ -38,6 +50,12 @@ li {
   display: inline-block;
   padding: 10px 15px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .header_title {
+    font-size: 19px;
+  }
 }
 
 .header_title2 {
@@ -53,13 +71,19 @@ li {
   font-weight: bold;
 }
 
+@media screen and (max-width: 480px) {
+  .header_title2 {
+    font-size: 21px;
+  }
+}
+
 .header_title2 span {
   color:white;
 }
 
-.four{
+/* .four{
     
-}
+} */
 
 .top_bottom {
     position: absolute;
@@ -181,6 +205,7 @@ nav {
   }
 
 .down {
+  margin-top: ;
   background-image: url(../images/lead-background-color.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -214,21 +239,12 @@ nav {
 
 .content_wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1,5em;
+  flex-wrap: wrap;
   margin-top: 78px;
+  
   /* box-sizing: border-box; スマホ時注意　*/
-}
-
-.box1 {
-  position: relative;
-}
-
-.box1_pic {
-  width: 519px;
-}
-
-.box2_pic {
-  width: 519px;
 }
 
 .sentence_box {
@@ -265,7 +281,12 @@ nav {
   color: #3b2d23;
   font-weight: bold;
 }
-.box1 {
+
+.option {
+  margin: 0 20px 20px 20px;
+  border: 7px solid #a56238;
+}
+/* .box1 {
   margin: 0 20px 20px 20px;
 }
 
@@ -275,7 +296,7 @@ nav {
 
 .box3 {
   margin: 0 20px 20px 20px;
-}
+} */
 
 /* <div class="option">
     <div class="box"></div>
@@ -284,6 +305,46 @@ nav {
             <p></p>
     </div>
 </div> */
+
+
+/* main up */
+.up{
+  width:100%;
+  height: 500px;
+  background-image: url(../images/leadHP.up.jpg);  
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.main_h2{
+  font-size: 30px;
+  padding-top: 80px;
+}
+
+.explanation2 {
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+.explanation3 {
+  margin-top: 30px;
+  font-size: 60px;
+}
+
+.up a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #a56238;
+  margin-top: 20px;
+}
+/* sp */
+@media screen and (min-width: 600px) { }
+
+/* */
+
 
 
 

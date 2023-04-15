@@ -33,11 +33,10 @@
     </header>
     <main>
         <div class="up">
-            <h2>地域密着、お客様に寄り添います。</h2>
-            <div class="explanation1"></div>
-            <h2>確かな実績</h2>
-            <h3>年間400件以上</h3>
-            <a href="">詳しくはこちら</a>
+            <h2 class="main_h2">地域密着、お客様に寄り添います。</h2>
+            <h2 class="explanation2">確かな実績</h2>
+            <h3 class="explanation3">年間400件以上</h3>
+            <a href="" target="_blank">詳しくはこちら</a>
         </div>
         <div class="down">
             <div class="container">
@@ -46,31 +45,31 @@
                 <div class="content_wrapper">
                     <div class="option">
                         <div class="box1">
-                            <img src="../images/lead-ecokyutou.jpg" height="200px" width="200px" class="box1_pic">
+                            <img src="../images/lead-ecokyutou.jpg" height="200px" width="100%" class="box1_pic">
                             <div class="sentence_box">
                                     <h2>エコキュート</h2>
                                     <div class="underbar_h2"></div>
-                                    <p>ああああああああああああああああああああああああ</p>
+                                    <p>エコキュートの販売・取り付け・修理、すべて自社施工で行います。</p>
                             </div>
                         </div>
                     </div>
                     <div class="option">
                         <div class="box2">
-                        <img src="../images/lead-reform.jpg" height="200px" width="200px" class="box2_pic">
+                        <img src="../images/lead-reform.jpg" height="200px" width="300px" class="box2_pic">
                             <div class="sentence_box">
                                 <h2>深夜電気温水器</h2>
                                 <div class="underbar_h2"></div>
-                                <p>ああああああああああああああああああああああああ</p>
+                                <p>深夜電気温水器の販売・取り付け・修理、すべて自社施工で行います。</p>
                             </div>
                         </div>
                     </div>
                     <div class="option">
                         <div class="box3">
-                            <img src="../images/lead-reform.jpg" height="200px" width="200px" class="box3_pic">
+                            <img src="../images/lead-reform.jpg" height="200px" width="300px" class="box3_pic">
                             <div class="sentence_box">
                                     <h2>リフォーム</h2>
                                     <div class="underbar_h2"></div>
-                                    <p>ああああああああああああああああああああああああ</p>
+                                    <p>安心価格と提案力と高品質で,必ずお客様を満足致します。</p>
                             </div>
                         </div>
                     </div>
