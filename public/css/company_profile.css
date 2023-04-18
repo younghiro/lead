@@ -7,7 +7,7 @@ html {
 body {
   background-color: ivory;
   display: block;
-  color: #0f3668;
+  color: #844a25;
 }
 
 h2 {
@@ -16,7 +16,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #0f3668;
+  color: #844a25;
 }
 
 a:hover {
@@ -50,7 +50,7 @@ a:hover {
 }
 
 .left-content h3 {
-  color: #0f3668;
+  color: #844a25;
   text-align: center;
   font-size: 10px;
 }
@@ -59,7 +59,7 @@ a:hover {
   content: '';
   width: 22px;
   height: 0.5px;
-  background-color: #0f3668;
+  background-color: #844a25;
   display: inline-block;
   margin: 3px;
 }
@@ -68,7 +68,7 @@ a:hover {
   content: '';
   width: 22px;
   height: 0.5px;
-  background-color: #0f3668;
+  background-color: #844a25;
   display: inline-block;
   margin: 3px;
 }
@@ -121,7 +121,9 @@ a:hover {
 
 .detail-list dt {
   margin-bottom: 10px;
-  border-bottom: 1px solid #0f3668;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 @media print, screen and (min-width: 480px) {
@@ -145,7 +147,7 @@ a:hover {
     margin-bottom: 0;
     padding: 10px 0;
     width: 71%;
-    border-bottom: 1px solid #0f3668;
+    border-bottom: 3px solid black;
   }
 }
 
@@ -186,13 +188,13 @@ a:hover {
 
 .content-navigator ul li a {
   width: 100%;
-  border: 1px solid #649bb1;
+  border: 1px solid #c97c4c;
   border-radius: 10px;
   font-size: 12px;
   font-size: 0.9rem;
   line-height: 28px;
   line-height: 2rem;
-  color: #0f3668;
+  color: #844a25;
   text-align: center;
   font-weight: bold;
   display: block;
@@ -202,7 +204,7 @@ a:hover {
 .content-navigator ul li a::before, .content-navigator ul li a::after {
   content: '';
   height: 1px;
-  background-color: #0f3668;
+  background-color: #844a25;
   display: block;
   position: absolute;
 }
@@ -222,7 +224,7 @@ a:hover {
 }
 
 .content-navigator ul li a:hover {
-  background-color: #649bb1;
+  background-color: #c97c4c;
   color: #fff;
   text-decoration: none;
   opacity: .7;
@@ -241,7 +243,7 @@ a:hover {
   content: '';
   width: 22px;
   height: 0.5px;
-  background-color: #0f3668;
+  background-color: #844a25;
   display: inline-block;
   margin: 3px;
 }
@@ -250,7 +252,7 @@ a:hover {
   content: '';
   width: 22px;
   height: 0.5px;
-  background-color: #0f3668;
+  background-color: #844a25;
   display: inline-block;
   margin: 3px;
 }
@@ -290,7 +292,7 @@ a:hover {
       justify-content: center;
       align-items: center;
       z-index: 90;
-      background-color: #0f3668;
+      background-color: #844a25;
   }
   .menu-btn span,
   .menu-btn span:before,
@@ -336,7 +338,7 @@ a:hover {
     top: 0;
     left: 0;
     z-index: 80;
-    background-color: #0f3668;
+    background-color: #844a25;
   }
   .menu-content ul {
       padding: 70px 10px 0;
@@ -375,7 +377,7 @@ a:hover {
     top: 0;
     left: 100%;/*leftの値を変更してメニューを画面外へ*/
     z-index: 80;
-    background-color: #0f3668;
+    background-color: #844a25;
     transition: all 0.5s;/*アニメーション設定*/
   }
 
