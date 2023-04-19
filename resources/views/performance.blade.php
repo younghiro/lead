@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="performance.css">
     <!-- -->
-    <title>Document</title>
+    <title>施工実績</title>
 </head>
 <body>
-    
+<header></header>
+    <section>
+        <p>現在、施工実績ページを準備中です。</p>
+        <p>ご質問があれば、お電話やメールにてお気軽にお問合せください。</p>
+        <div>
+            <a href="tel:0120495912">0120-495-912</a>
+        </div>
+        <p>メールアドレス: info@lead-aichi.com</p>
+    </section>
 </body>
 </html>

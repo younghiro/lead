@@ -34,4 +34,8 @@ Route::get('/inquiry', function (){
     return view('inquiry');
 });
 
+Route::get('/performance', function (){
+    return view('performance');
+});
+
 ?>
