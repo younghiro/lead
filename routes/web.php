@@ -30,4 +30,8 @@ Route::get('/flow', function (){
     return view('flow');
 });
 
+Route::get('/inquiry', function (){
+    return view('inquiry');
+});
+
 ?>

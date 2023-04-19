@@ -11,6 +11,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+<header></header>
+    <section>
+        <p>現在、お問合せフォームを準備中です。</p>
+        <p>お電話、メールでのお問い合わせにて、承ります。</p>
+        <div>
+            <a href="tel:0120495912">0120-495-912</a>
+        </div>
+        <p>メールアドレス: info@lead-aichi.com</p>
+    </section>
 </body>
 </html>
