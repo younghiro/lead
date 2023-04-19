@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="{{ asset('sanitize.css') }}">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <!-- -->
-    <title>Document</title>
+    <title>株式会社リード</title>
 </head>
 <body>
     <header class="header">
         <div class="header_top">
             <div class="top_main">
                 <p class="header_title">エコキュートから深夜電気温水器</p>
-                <p class="header_title2">リフォームまで<span>Lead株式会社</span></p>
+                <p class="header_title2">リフォームまで<span class="top_main_companyName">株式会社リード</span></p>
+                <h1 class="header_sp1">株式会社リード</h1>
             </div>
         </div>
         <div class="top_bottom">
@@ -31,7 +32,7 @@
             </div>
         </div>
         <!-- elements at the top -->
-        <!-- <div class="humburger-menu">
+        <div class="humburger-menu">
             <input type="checkbox" id="menu-btn-check">
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
             <div class="menu-content">
@@ -42,7 +43,7 @@
                     <li><a href="https://google.com">お問合せ</a></li>
                 </ul>
             </div>
-        </div> -->
+        </div>
         <!-- elements in the top -->
     </header>
     <main>
