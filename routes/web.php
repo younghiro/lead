@@ -29,3 +29,5 @@ Route::get('/company_profile', function () {
 Route::get('/flow', function (){
     return view('flow');
 });
+
+?>
