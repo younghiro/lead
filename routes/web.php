@@ -23,5 +23,9 @@ Route::get('/menu', function () {
 });
 
 Route::get('/company_profile', function () {
-    return view('/company_profile');
+    return view('company_profile');
+});
+
+Route::get('/flow', function (){
+    return view('flow');
 });
