@@ -24,18 +24,18 @@ Route::get('/menu', function () {
 
 Route::get('/company_profile', function () {
     return view('company_profile');
-});
+})->name('company_profile');
 
 Route::get('/flow', function (){
     return view('flow');
-});
+})->name('flow');
 
 Route::get('/inquiry', function (){
     return view('inquiry');
-});
+})->name('inquiry');
 
 Route::get('/performance', function (){
     return view('performance');
-});
+})->name('performance');
 
 ?>
