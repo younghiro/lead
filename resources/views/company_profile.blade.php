@@ -16,10 +16,10 @@
         <label for="menu-btn-check" class="menu-btn"><span></span></label>
         <div class="menu-content">
             <ul class="list">
-                <li><a href="https://google.com">ホーム</a></li>
-                <li><a href="https://google.com">サービスの流れ</a></li>
-                <li><a href="https://google.com">施工実績</a></li>
-                <li><a href="https://google.com">お問合せ</a></li>
+                <li><a href="{{ route('home') }}">ホーム</a></li>
+                <li><a href="{{ route('flow') }}">サービスの流れ</a></li>
+                <li><a href="{{ route('performance') }}">施工実績</a></li>
+                <li><a href="{{ route('inquiry') }}">お問合せ</a></li>
             </ul>
         </div>
     </div>

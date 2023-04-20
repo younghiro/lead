@@ -23,10 +23,10 @@
             <div class="top_bottom_position">
                 <p class="slash">menu</p>
                 <nav class=four>
-                    <a class="nth-child1" href="" target="_blank" rel="noopener noreferrer">施工実績</a>
-                    <a class="nth-child2" href="" target="_blank" rel="noopener noreferrer">サービスの流れ</a>
-                    <a class="nth-child3" href="" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
-                    <a class="nth-child4" href="" target="_blank" rel="noopener noreferrer">会社概要</a>
+                    <a class="nth-child1" href="{{ route('performance') }}" target="_blank" rel="noopener noreferrer">施工実績</a>
+                    <a class="nth-child2" href="{{ route('flow') }}" target="_blank" rel="noopener noreferrer">サービスの流れ</a>
+                    <a class="nth-child3" href="{{ route('inquiry') }}" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+                    <a class="nth-child4" href="{{ route('company_profile') }}" target="_blank" rel="noopener noreferrer">会社概要</a>
                     <div class="animation start-home"></div>
                 </nav>
             </div>
@@ -37,10 +37,10 @@
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
             <div class="menu-content">
                 <ul class="list">
-                    <li><a href="https://google.com">ホーム</a></li>
-                    <li><a href="https://google.com">サービスの流れ</a></li>
-                    <li><a href="https://google.com">施工実績</a></li>
-                    <li><a href="https://google.com">お問合せ</a></li>
+                    <li><a href="{{ route('flow') }}">サービスの流れ</a></li>
+                    <li><a href="{{ route('performance') }}">施工実績</a></li>
+                    <li><a href="{{ route('inquiry') }}">お問合せ</a></li>
+                    <li><a href="{{ route('company_profile') }}">会社概要</a></li>
                 </ul>
             </div>
         </div>
@@ -54,7 +54,7 @@
             <p class="contact">お電話でお気軽にお問合せください<p>
             <p class="toll_free_dial">フリーダイアル<p>
             <div class="a_tag">
-                <a class="a_number" href="tel:" target="_blank">お電話</a>
+                <a class="a_number" href="tel:0120495912" target="_blank">お電話</a>
             </div>
         </div>
         <div class="down">
