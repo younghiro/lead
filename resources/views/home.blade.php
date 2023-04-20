@@ -8,36 +8,54 @@
     <link rel="stylesheet" href="{{ asset('sanitize.css') }}">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <!-- -->
-    <title>Document</title>
+    <title>株式会社リード</title>
 </head>
 <body>
     <header class="header">
         <div class="header_top">
             <div class="top_main">
                 <p class="header_title">エコキュートから深夜電気温水器</p>
-                <p class="header_title2">リフォームまで<span>Lead株式会社</span></p>
+                <p class="header_title2">リフォームまで<span class="top_main_companyName">株式会社リード</span></p>
+                <h1 class="header_sp1">株式会社リード</h1>
             </div>
         </div>
         <div class="top_bottom">
             <div class="top_bottom_position">
                 <p class="slash">menu</p>
                 <nav class=four>
-                    <a href="" target="_blank" rel="noopener noreferrer">施工実績</a>
-                    <a href="" target="_blank" rel="noopener noreferrer">サービスの流れ</a>
-                    <a href="" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
-                    <a href="" target="_blank" rel="noopener noreferrer">会社概要</a>
+                    <a class="nth-child1" href="" target="_blank" rel="noopener noreferrer">施工実績</a>
+                    <a class="nth-child2" href="" target="_blank" rel="noopener noreferrer">サービスの流れ</a>
+                    <a class="nth-child3" href="" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+                    <a class="nth-child4" href="" target="_blank" rel="noopener noreferrer">会社概要</a>
                     <div class="animation start-home"></div>
                 </nav>
             </div>
         </div>
+        <!-- elements at the top -->
+        <div class="humburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+                <ul class="list">
+                    <li><a href="https://google.com">ホーム</a></li>
+                    <li><a href="https://google.com">サービスの流れ</a></li>
+                    <li><a href="https://google.com">施工実績</a></li>
+                    <li><a href="https://google.com">お問合せ</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- elements in the top -->
     </header>
     <main>
         <div class="up">
-            <h2>地域密着、お客様に寄り添います。</h2>
-            <div class="explanation1"></div>
-            <h2>確かな実績</h2>
-            <h3>年間400件以上</h3>
-            <a href="">詳しくはこちら</a>
+            <h2 class="main_h2">地域密着、お客様に寄り添います。</h2>
+            <h2 class="explanation2">確かな実績</h2>
+            <h3 class="explanation3">年間400件以上</h3>
+            <p class="contact">お電話でお気軽にお問合せください<p>
+            <p class="toll_free_dial">フリーダイアル<p>
+            <div class="a_tag">
+                <a class="a_number" href="tel:" target="_blank">お電話</a>
+            </div>
         </div>
         <div class="down">
             <div class="container">
@@ -46,31 +64,31 @@
                 <div class="content_wrapper">
                     <div class="option">
                         <div class="box1">
-                            <img src="../images/lead-ecokyutou.jpg" height="200px" width="200px" class="box1_pic">
+                            <img src="../images/lead-ecokyutou.jpg" height="200px" width="100%" class="box1_pic">
                             <div class="sentence_box">
                                     <h2>エコキュート</h2>
                                     <div class="underbar_h2"></div>
-                                    <p>ああああああああああああああああああああああああ</p>
+                                    <p>エコキュートの販売・取り付け・修理、すべて自社施工で行います。</p>
                             </div>
                         </div>
                     </div>
                     <div class="option">
                         <div class="box2">
-                        <img src="../images/lead-reform.jpg" height="200px" width="200px" class="box2_pic">
+                        <img src="../images/lead-reform.jpg" height="200px" width="300px" class="box2_pic">
                             <div class="sentence_box">
                                 <h2>深夜電気温水器</h2>
                                 <div class="underbar_h2"></div>
-                                <p>ああああああああああああああああああああああああ</p>
+                                <p>深夜電気温水器の販売・取り付け・修理、すべて自社施工で行います。</p>
                             </div>
                         </div>
                     </div>
                     <div class="option">
                         <div class="box3">
-                            <img src="../images/lead-reform.jpg" height="200px" width="200px" class="box3_pic">
+                            <img src="../images/lead-reform.jpg" height="200px" width="300px" class="box3_pic">
                             <div class="sentence_box">
                                     <h2>リフォーム</h2>
                                     <div class="underbar_h2"></div>
-                                    <p>ああああああああああああああああああああああああ</p>
+                                    <p>安心価格と提案力と高品質で,必ずお客様を満足致します。</p>
                             </div>
                         </div>
                     </div>

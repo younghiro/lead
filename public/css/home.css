@@ -1,3 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  box-sizing: border-box;
+}
+body *{
+  box-sizing: inherit; /* box-sizingの値は継承されないので明示的に設定 */
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -23,8 +34,44 @@ li {
   position: relative;
 }
 
-.header_top{
-  height: ;
+@media screen and (max-width: 420px) {
+  .header {
+    background-image: url(../images/lead_home_header_sp.png);
+  }
+
+  .header_title{
+    display: none !important;
+  }
+
+  .header_title2{
+    display: none !important;
+  }
+
+  .top_main_companyName {
+    display: none;
+  }
+
+  .header_sp1 {
+    color: #a56238 !important;
+    top: 25px !important;
+    left: 30px !important;
+  }
+}
+
+@media screen and (min-width : 420px) and (max-width : 820px){
+  .header_title {
+    font-size: 27px !important;
+    top: 40% !important;
+  }
+
+  .header_title2 {
+    font-size: 27px !important;
+    top: 50% !important;
+  }
+
+  .top_main_companyName {
+    font-size: 35px !important;
+  }
 }
 
 .header_title {
@@ -53,12 +100,20 @@ li {
   font-weight: bold;
 }
 
-.header_title2 span {
-  color:white;
+.header_sp1 {
+  color: #ffffff;
 }
 
-.four{
-    
+.header_title2 span {
+  color:white;
+  font-size: 50px;
+}
+
+.header_sp1 {
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 .top_bottom {
@@ -127,6 +182,7 @@ nav {
     font-size: 0;
   }
   nav a {
+    width: 100%;
     line-height: 60px;
     height: 100%;
     font-size: 15px;
@@ -147,34 +203,34 @@ nav {
     transition: all .5s ease 0s;
     border-radius: 8px;
   }
-  a:nth-child(1) {
+  .nth-child1 {
     width: 25%;
   }
-  a:nth-child(2) {
+  .nth-child2 {
     width: 25%;
   }
-  a:nth-child(3) {
+  .nth-child3 {
     width: 25%;
   }
-  a:nth-child(4) {
+  .nth-child4 {
     width: 25%;
   }
-  nav .start-home, a:nth-child(1):hover~.animation {
+  nav .start-home, .nth-child1:hover~.animation {
     width: 23%;
     left: 0;
     background-color: #ad9180;
   }
-  nav .start-about, a:nth-child(2):hover~.animation {
+  nav .start-about, .nth-child2:hover~.animation {
     width: 27%;
     left: 23%;
     background-color: #ad9180;
   }
-  nav .start-blog, a:nth-child(3):hover~.animation {
+  nav .start-blog, .nth-child3:hover~.animation {
     width: 23%;
     left: 50%;
     background-color: #ad9180;
   }
-  nav .start-portefolio, a:nth-child(4):hover~.animation {
+  nav .start-portefolio, .nth-child4:hover~.animation {
     width: 23%;
     left: 77%;
     background-color: #ad9180;
@@ -214,21 +270,12 @@ nav {
 
 .content_wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1,5em;
+  flex-wrap: wrap;
   margin-top: 78px;
+  
   /* box-sizing: border-box; スマホ時注意　*/
-}
-
-.box1 {
-  position: relative;
-}
-
-.box1_pic {
-  width: 519px;
-}
-
-.box2_pic {
-  width: 519px;
 }
 
 .sentence_box {
@@ -265,7 +312,12 @@ nav {
   color: #3b2d23;
   font-weight: bold;
 }
-.box1 {
+
+.option {
+  margin: 0 20px 20px 20px;
+  border: 7px solid #a56238;
+}
+/* .box1 {
   margin: 0 20px 20px 20px;
 }
 
@@ -275,7 +327,7 @@ nav {
 
 .box3 {
   margin: 0 20px 20px 20px;
-}
+} */
 
 /* <div class="option">
     <div class="box"></div>
@@ -286,6 +338,252 @@ nav {
 </div> */
 
 
+/* main up */
+.up{
+  width:100%;
+  height: 500px;
+  background-image: url(../images/leadHP.up.jpg);  
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.main_h2{
+  font-size: 30px;
+  padding-top: 80px;
+}
+
+.explanation2 {
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+.explanation3 {
+  margin-top: 30px;
+  font-size: 60px;
+}
+
+.a_number {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #a56238;
+  margin-top: 20px;
+}
+
+.a_number {
+  width: 300px;
+  height: 50px;
+  display: inline-block;
+  font-size: 20px;
+}
+/* sp */
+/* @media screen and (min-width: 600px) {
+  .top_bottom {
+    display: none;
+ } */
+/* bar menuを隠す */
+/* */
+
+@media (max-width: 768px) { /* 画面サイズが768px以下の場合*/
+  
+  .up{
+    width:100%;
+    height: 500px;
+    background-image: url(../images/leadHP.up.jpg);  
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .main_h2{
+    font-size: 15px;
+    padding-top: 80px;
+  }
+  
+  .explanation2 {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  
+  .explanation3 {
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  
+  .a_tag{
+    height: 100px;
+    width: 280px;
+    display: inline-block;
+    text-align: center;
+    /* background-color: #a56238; */
+    margin-top: 20px;
+    background-color: #a56238;
+    position: relative;
+    border-radius: 15px;
+  }
+
+  .a_number {
+    display: inline-block;
+    height: 100px;
+    width: 280px;
+    margin-top: 0 ;
+    font-size: 30px;
+    padding-top: 10px;
+    position: absolute;
+    top: 80px;
+    left: 140px;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+  }
+  .top_bottom {
+    display: none; /* sidebarを非表示にする */
+  }
+}
+
 
 /* sp */
-@media screen and (min-width: 600px) { }
+/* @media screen and (min-width: 600px) { } */
+
+/* チェックボックス隠す */
+.list {
+  display: none;
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+@media (max-width: 768px) { /* 画面サイズが768px以下の場合 */
+
+  /* middleの横幅を調整 */
+  .middle {
+    width: auto;
+  }
+  
+  /* listクラスのやつを横書きにする */
+  .list {
+    display: flex;
+    flex-direction: column;
+    writing-mode: horizontal-tb;
+    justify-content: center;
+    position: relative;
+    left: 0;
+  }
+
+  .list li {
+    font-size: 14px;
+    text-align: top;
+    list-style: none;
+    margin: 2px;
+    padding: 3px;
+  }
+
+  /* 三本線ボタンの実装 */
+  .menu-btn {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      height: 60px;
+      width: 60px;
+      justify-content: center;
+      align-items: center;
+      z-index: 90;
+      background-color: #ae9b8f;
+      border-radius: 15px;
+
+  }
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 25px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      position: absolute;
+  }
+  .menu-btn span:before {
+      bottom: 8px;
+  }
+  .menu-btn span:after {
+      top: 8px;
+  }
+
+  /* ×マークにする */
+  #menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+  }
+  #menu-btn-check:checked ~ .menu-btn span::before {
+      bottom: 0;
+      transform: rotate(45deg);
+  }
+  #menu-btn-check:checked ~ .menu-btn span::after {
+      top: 0;
+      transform: rotate(-45deg);
+  }
+
+  /* チェックボックス隠す */
+  #menu-btn-check {
+      display: none;
+  }
+
+  /* メニューの実装 */
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #0f3668;
+  }
+  .menu-content ul {
+      padding: 70px 10px 0;
+  }
+  .menu-content ul li {
+      border-bottom: solid 1px #ffffff;
+      list-style: none;
+  }
+  .menu-content ul li a {
+      display: block;
+      width: 100%;
+      font-size: 15px;
+      box-sizing: border-box;
+      color:#ffffff;
+      text-decoration: none;
+      padding: 9px 15px 10px 0;
+      position: relative;
+  }
+  .menu-content ul li a::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-top: solid 2px #ffffff;
+      border-right: solid 2px #ffffff;
+      transform: rotate(45deg);
+      position: absolute;
+      right: 11px;
+      top: 16px;
+  }
+
+  /* メニューを画面外に */
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #a56238;
+    transition: all 0.5s;/*アニメーション設定*/
+  }
+
+  /* ボタンタップ時にメニュー表示 */
+  #menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+  }
+}
