@@ -71,7 +71,7 @@
                 <div class="content_wrapper">
                     <div class="option">
                         <div class="box1">
-                            <img src="../images/lead-ecokyutou.jpg" height="200px" width="100%" class="box1_pic">
+                            <img src="../images/lead-ecokyutou.jpg" height="200px" width="300px" class="box1_pic">
                             <div class="sentence_box">
                                     <h2>エコキュート</h2>
                                     <div class="underbar_h2"></div>
