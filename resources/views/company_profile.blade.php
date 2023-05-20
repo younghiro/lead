@@ -66,8 +66,8 @@
         </div>
         <div class="philosophy">
             <h2 id="philo-title">理念<span class="subtitle">PHILOSOPHY</span></h2>
-            <table>
-            </table>
+            <p class="sub_philosophy">"心を込めたサービスと技術で<br class="br-sp">豊かで快適な社会を目指します"</p>
+            <h3 class="main_philosophy">より良い生活を未来へリード</h3>
         </div>
         <div class="company-detail">
             <h2 id="copany-detail-title">会社詳細<span class="subtitle">DETAIL</span></h2>
