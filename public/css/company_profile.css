@@ -91,6 +91,30 @@ a:hover {
   padding: 3px;
 }
 
+.sub_philosophy {
+  font-size: 1.15em;
+  text-align: center;
+}
+
+.main_philosophy {
+  text-align: center;
+  font-size: 2.1em;
+}
+
+.br-sp {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .br-sp {
+    display: block !important;
+  }
+
+  .main_philosophy{
+    font-size: 1.6em;
+  }
+}
+
 .company-detail {
   width: 100%;
 }
