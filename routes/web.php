@@ -30,12 +30,15 @@ Route::get('/flow', function (){
     return view('flow');
 })->name('flow');
 
-Route::get('/inquiry', function (){
-    return view('inquiry');
-})->name('inquiry');
-
 Route::get('/performance', function (){
     return view('performance');
 })->name('performance');
+
+//入力ページ
+Route::get('/inquiry', 'ContactsController@index')->name('inquiry');
+//確認フォームページ
+Route::post('/contact_confirm', 'ContactsController@confirm')->name('contact_confirm');
+//送信完了ページ
+Route::post('/contact_thanks', 'ContactsController@send')->name('send');
 
 ?>
