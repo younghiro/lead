@@ -81,7 +81,7 @@
                     </div>
                     <div class="option">
                         <div class="box2">
-                        <img src="../images/lead-reform.jpg" height="200px" width="300px" class="box2_pic">
+                        <img src="../images/lead-waterHeater.jpg" height="200px" width="300px" class="box2_pic">
                             <div class="sentence_box">
                                 <h2>深夜電気温水器</h2>
                                 <div class="underbar_h2"></div>
