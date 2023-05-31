@@ -35,10 +35,10 @@ Route::get('/performance', function (){
 })->name('performance');
 
 //入力ページ
-Route::get('/inquiry', 'ContactsController@index')->name('inquiry');
+Route::get('/inquiry', 'App\Http\Controllers\ContactsController@index')->name('inquiry');
 //確認フォームページ
-Route::post('/contact_confirm', 'ContactsController@confirm')->name('contact_confirm');
+Route::post('/contact_confirm', 'App\Http\Controllers\ContactsController@confirm')->name('contact_confirm');
 //送信完了ページ
-Route::post('/contact_thanks', 'ContactsController@send')->name('send');
+Route::post('/contact_thanks', 'App\Http\Controllers\ContactsController@send')->name('send');
 
 ?>

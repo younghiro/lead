@@ -13,47 +13,34 @@ class ContactsSendmail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    private $email;
+    private $title;
+    private $body;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($inputs)
     {
-        //
+         // コンストラクタでプロパティに値を格納
+        $this->email = $inputs['email'];
+        $this->title = $inputs['title'];
+        $this->body = $inputs['body'];
     }
 
-    /**
-     * Get the message envelope.
-     *
-     * @return \Illuminate\Mail\Mailables\Envelope
-     */
-    public function envelope()
+    public function build()
     {
-        return new Envelope(
-            subject: 'Contacts Sendmail',
-        );
-    }
-
-    /**
-     * Get the message content definition.
-     *
-     * @return \Illuminate\Mail\Mailables\Content
-     */
-    public function content()
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
-
-    /**
-     * Get the attachments for the message.
-     *
-     * @return array
-     */
-    public function attachments()
-    {
-        return [];
+        // メールの設定
+        return $this
+            ->from('younghiromu112010ver2@gmail.com')
+            ->subject('自動送信メール')
+            ->view('mail')
+            ->with([
+            'email' => $this->email,
+            'title' => $this->title,
+            'body' => $this->body,
+            ]);
     }
 }
