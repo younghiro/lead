@@ -177,3 +177,118 @@ html {
 }
 
 /* ここまで */
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+.contact-detail li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+h1{
+    text-align: center;
+    border-bottom: 1px solid #95999d;
+    border-top: 1px solid #95999d;
+    padding: 20px;
+}
+
+p.h1-explanation {
+    text-align: center;
+    margin: 60px;
+}
+
+/* -----form----- */
+form{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    flex-direction: column!important;
+    display: flex!important;
+}
+
+.form-control {
+    font-size: calc(1rem + 2px);
+    border: 1px solid #999;
+    border-radius: 0.25rem;
+    height: 50px;
+}
+
+.u-form__control-text {
+    padding: 10px;
+}
+
+.form-subject{
+    background-color: #f1f1f1;
+    padding: 1rem!important;
+    justify-content: space-between!important;
+}
+
+.form-section {
+    align-items: center;
+    font-size: calc(1rem - 1px);
+    /* height: 30px; */
+    font-weight: 700;
+    display: flex  !important;
+    padding: 1rem!important;
+    justify-content: space-between!important;
+}
+
+.form-detail {
+    width: 100%;
+    padding-left: 0.5rem!important;
+}
+
+#lastName, #firstName, #lastNameKana, #firstNameKana {
+    width: 100%;
+}
+
+#email {
+    width: 70%;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#content{
+    height: auto;
+    padding: 0.375rem 0.75rem;
+    display: inline;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.u-margin-sm__tb {
+    margin-top: 30px;
+}
+
+.c-button-list {
+    margin-top: 0.5rem;
+}
+
+/* .button_frame{
+
+} */
+
+.button_detail{
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.c-button__primary {
+    margin: 0 auto;
+    width: 80%;
+    padding: calc((48px - 1em)/2) 0.5em;
+    font-size: inherit;
+    line-height: 1;
+    background-color: #c6c6c6;
+    border-color: #c6c6c6;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+
+}
