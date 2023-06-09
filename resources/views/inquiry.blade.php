@@ -16,7 +16,7 @@
 @section('main')
 
 <h1>お問合せ</h1>
-<p class=h1-explanation>ご返信につきましては順次ご対応のため、回答にお時間をいただくことがございます。</p>
+<p class=h1-explanation>ご返信につきましては順次ご対応のため、<br class="sma">回答にお時間をいただくことがございます。</p>
 <h2>■フリーダイヤル</h2>
 <ul class=contact-detail>
     <li>TEL： 0120-10-0000</li>
@@ -26,8 +26,8 @@
 <h2>■メールフォーム</h2>
 <ul class=contact-detail>
     <li>※お問い合わせはメールにてご回答いたします。</li>
-    <li>　contact-@.com　】からのメールを受信可能にしてください。</li>
-    <li>以下の入力フォームにお問い合わせ内容を入力し「確認する」をクリックしてください。</li>
+    <li>【　info@lead-aichi.com　】からのメールを<br class="sma">受信可能にしてください。</li>
+    <li>以下の入力フォームにお問い合わせ内容を入力し<br class="sma">「確認する」をクリックしてください。</li>
 </ul>
 
 <!-- 
