@@ -51,10 +51,16 @@ text
         </div>
         <div class="form-section">
             <div class="form-detail">
-                <input type="text" id="lastName" name="lastName" class="u-form__control-text form-control" placeholder="山田" value="" maxlength="20" required="">
+                <input type="text" id="lastName" name="lastName" class="u-form__control-text form-control" placeholder="山田" value="{{ old('lastName') }}" maxlength="20" required="">
+                @if ($errors->has('lastName'))
+                    <p class="error-message">{{ $errors->first('body') }}</p>
+                @endif
             </div>
             <div class="form-detail">
-                <input type="text" id="firstName" name="firstName" class="u-form__control-text form-control" placeholder="花子" value="" maxlength="20" required="">
+                <input type="text" id="firstName" name="firstName" class="u-form__control-text form-control" placeholder="花子" value="{{ old('firsttName') }}" maxlength="20" required="">
+                @if ($errors->has('firstName'))
+                    <p class="error-message">{{ $errors->first('body') }}</p>
+                @endif
             </div>
         </div>
     </div>
@@ -65,10 +71,16 @@ text
         </div>
         <div class="form-section">
             <div class="form-detail">
-                <input type="text" id="lastNameKana" name="lastNameKana" class="u-form__control-text form-control" placeholder="ヤマダ" value="" pattern="[\u30A1-\u30F6]*" data-parsley-pattern-message="カタカナで入力してください。" maxlength="20" required="">
+                <input type="text" id="lastNameKana" name="lastNameKana" class="u-form__control-text form-control" placeholder="ヤマダ" value="{{ old('lastNameKana') }}" pattern="[\u30A1-\u30F6]*" data-parsley-pattern-message="カタカナで入力してください。" maxlength="20" required="">
+                @if ($errors->has('lastNameKana'))
+                    <p class="error-message">{{ $errors->first('body') }}</p>
+                @endif
             </div>
             <div class="form-detail">
-                <input type="text" id="firstNameKana" name="firstNameKana" class="u-form__control-text form-control" placeholder="ハナコ" value="" pattern="[\u30A1-\u30F6]*" data-parsley-pattern-message="カタカナで入力してください。" maxlength="20" required="">
+                <input type="text" id="firstNameKana" name="firstNameKana" class="u-form__control-text form-control" placeholder="ハナコ" value="{{ old('firstNameKana') }}" pattern="[\u30A1-\u30F6]*" data-parsley-pattern-message="カタカナで入力してください。" maxlength="20" required="">
+                @if ($errors->has('firstNameKana'))
+                    <p class="error-message">{{ $errors->first('body') }}</p>
+                @endif
             </div>
         </div>
     </div>
@@ -79,9 +91,9 @@ text
         </div>
         <div class="form-section">
             <input type="email" id="email" name="email" class="u-form__control-text--w50 form-control" placeholder="XXXXXX@XXXX.co.jp" value="{{ old('email') }}" maxlength="100" required="">
-            <!-- @if ($errors->has('email'))
+            @if ($errors->has('email'))
                 <p class="error-message">{{ $errors->first('email') }}</p>
-            @endif -->
+            @endif
         </div>
     </div>
     <div class="flex">
@@ -90,11 +102,11 @@ text
             <span class="u-form__required"></span>
         </div>
         <div class="form-section">
-            <textarea type="text" id="content" name="content" class="form-control" rows="8" placeholder="" required="">{{ old('body') }}</textarea>
-        </div>
-        <!-- @if ($errors->has('body'))
+            <textarea type="text" id="content" name="content" class="form-control" rows="8" placeholder="" required="" value="{{ old('content') }}">{{ old('content') }}</textarea>
+            @if ($errors->has('body'))
             <p class="error-message">{{ $errors->first('body') }}</p>
-        @endif -->
+            @endif
+        </div>
     </div>
     <div class="u-margin-sm__tb">
         <div class="c-button-list">

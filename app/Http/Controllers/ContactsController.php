@@ -18,9 +18,12 @@ class ContactsController extends Controller
         // バリデーションルールを定義
         // 引っかかるとエラーを起こしてくれる
         $request->validate([
+        'lastName' => 'required|max:20|string',
+        'firstName' => 'required|max:20|string',
+        'lastNameKana' => 'required|max:20|string',
+        'firstNameKana' => 'required|max:20|string',
         'email' => 'required|email',
-        'title' => 'required',
-        'body' => 'required',
+        'content' => 'required|max:600|string',
         ]);
 
         // フォームからの入力値を全て取得
@@ -37,9 +40,12 @@ class ContactsController extends Controller
     {
         // バリデーション
         $request->validate([
+        'lastName' => 'required|max:20|string',
+        'firsttName' => 'required|max:20|string',
+        'lastNameKana' => 'required|max:20|string',
+        'firstNameKana' => 'required|max:20|string',
         'email' => 'required|email',
-        'title' => 'required',
-        'body' => 'required'
+        'content' => 'required|max:600|string',
     ]);
 
         // actionの値を取得

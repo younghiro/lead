@@ -1,0 +1,423 @@
+html {
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+  
+  body {
+    background-color: ivory;
+    display: block;
+    color: #844a25;
+}
+  
+  h2 {
+    font-size: 18px;
+}
+  
+  a {
+    text-decoration: none;
+    color: #844a25;
+}
+  
+  a:hover {
+    opacity: .7;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    writing-mode: vertical-rl;
+    justify-content: space-between;
+  
+    position: relative;
+    left: 80%;
+}
+  
+  .list li {
+    font-size: 14px;
+    text-align: top;
+    list-style: none;
+    margin: 2px;
+    padding: 3px;
+}
+
+/* ここからハンバーガーメニューとheaderのレスポンシブデザインになります */
+
+.header {
+    margin: 0;
+    padding: 50px 0 0;
+    width: 100%;
+    display: block;
+}
+
+
+/* チェックボックス隠す */
+#menu-btn-check {
+    display: none;
+}
+
+@media (max-width: 768px) { /* 画面サイズが768px以下の場合 */
+
+/* middleの横幅を調整 */
+.middle {
+    width: auto;
+}
+
+/* listクラスのやつを横書きにする */
+.list {
+    writing-mode: horizontal-tb;
+    justify-content: center;
+    left: 0;
+}
+
+/* 三本線ボタンの実装 */
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #844a25;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+/* ×マークにする */
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/* チェックボックス隠す */
+#menu-btn-check {
+    display: none;
+}
+
+/* メニューの実装 */
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #844a25;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+/* メニューを画面外に */
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #844a25;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+/* ボタンタップ時にメニュー表示 */
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+}
+
+/* ここまで */
+
+/* 改行用 */
+.sma{
+    display: none;
+}
+
+/*スマートフォンでは有効（改行する）*/
+@media screen and (max-width:768px) {
+    .sma{
+        display: block;
+    }
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul.contact-detail {
+    list-style: none;
+}
+
+.contact-detail li{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 420px) {
+
+    ul.contact-detail {
+        padding-left: 0;
+
+    }
+    .contact-detail li {
+        text-align: center;
+    }
+}
+
+h1{
+    text-align: center;
+    border-bottom: 1px solid #95999d;
+    border-top: 1px solid #95999d;
+    padding: 20px;
+}
+
+p.h1-explanation {
+    text-align: center;
+    margin: 60px;
+}
+
+@media screen and (max-width: 420px) {
+    p.h1-explanation {
+        margin: 15px;
+    }
+}
+
+/* -----form----- */
+form{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    flex-direction: column!important;
+    display: flex!important;
+}
+
+.form-control {
+    font-size: calc(1rem + 2px);
+    border: 1px solid #999;
+    border-radius: 0.25rem;
+    height: 50px;
+}
+
+@media screen and (max-width: 420px) {
+    .form-control {
+        font-size: initial;
+    }
+}
+
+.u-form__control-text {
+    padding: 10px;
+}
+
+.form-subject{
+    background-color: #f1f1f1;
+    padding: 1rem!important;
+    display: flex;
+    justify-content: space-between!important;
+}
+
+.u-form__required:after {
+    content: "必須";
+    font-size: 1rem;
+    color: #d94d4d;
+    border: 1px solid #d94d4d;
+    border-radius: 4px;
+    padding: 2px 4px;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.form-section {
+    align-items: center;
+    font-size: calc(1rem - 1px);
+    /* height: 30px; */
+    font-weight: 700;
+    display: flex  !important;
+    padding: 1rem!important;
+    justify-content: space-between!important;
+}
+
+.form-detail {
+    width: 100%;
+    padding-left: 0.5rem!important;
+}
+
+#lastName, #firstName, #lastNameKana, #firstNameKana {
+    width: 100%;
+}
+
+#email {
+    width: 70%;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 420px) {
+    #email {
+        width: 100%;
+    }
+
+    textarea{
+        font-size: 19px !important;
+    }
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+#content {
+    height: auto;
+    padding: 0.375rem 0.75rem;
+    display: inline;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.u-margin-sm__tb {
+    margin-top: 30px;
+}
+
+.c-button-list {
+    margin-top: 0.5rem;
+}
+
+/* .button_frame{
+
+} */
+
+.button_detail{
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.c-button__primary {
+    margin: 0 auto;
+    width: 80%;
+    padding: calc((48px - 1em)/2) 0.5em;
+    font-size: inherit;
+    line-height: 1;
+    background-color: #c6c6c6;
+    border-color: #c6c6c6;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+
+}
+
+/* confirmation_form */
+
+.confirmation_name {
+    margin-right: 0.5rem!important;
+    display: inline-block;
+    margin: auto;
+    font-size: 16px;
+}
+
+.confirmation_content{
+    overflow: auto;
+}
+
+.button_margin{
+    margin: 30px 0;
+}
+
+.flex-shape {
+    display: flex !important;
+    flex-direction: column!important;
+
+}
+
+@media (min-width: 768px){
+    .flex-shape {
+        flex-direction: row-reverse!important;
+        justify-content: center!important;
+    }
+}
+
+.button-margin{
+    
+}
+
+.contact-explanation{
+    text-align: center;
+}
+
+.button-container {
+    display: inline-block !important;
+    position: relative;
+    width: 100% !important;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.button-color{
+    margin-bottom: 0.5rem!important;
+}
+
+.button-detail{
+    display: inline !important;
+    width: 100% !important;
+    padding: calc((48px - 1em)/2) 0.5em;
+    font-size: inherit;
+    line-height: 1;
+    background-color: #c6c6c6;
+    border-color: #c6c6c6;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
