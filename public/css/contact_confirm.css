@@ -358,3 +358,66 @@ textarea {
     border-radius: 0.25rem;
 
 }
+
+/* confirmation_form */
+
+.confirmation_name {
+    margin-right: 0.5rem!important;
+    display: inline-block;
+    margin: auto;
+    font-size: 16px;
+}
+
+.confirmation_content{
+    overflow: auto;
+}
+
+.button_margin{
+    margin: 30px 0;
+}
+
+.flex-shape {
+    display: flex !important;
+    flex-direction: column!important;
+
+}
+
+@media (min-width: 768px){
+    .flex-shape {
+        flex-direction: row-reverse!important;
+        justify-content: center!important;
+    }
+}
+
+.button-margin{
+    
+}
+
+.contact-explanation{
+    text-align: center;
+}
+
+.button-container {
+    display: inline-block !important;
+    position: relative;
+    width: 100% !important;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.button-color{
+    margin-bottom: 0.5rem!important;
+}
+
+.button-detail{
+    display: inline !important;
+    width: 100% !important;
+    padding: calc((48px - 1em)/2) 0.5em;
+    font-size: inherit;
+    line-height: 1;
+    background-color: #c6c6c6;
+    border-color: #c6c6c6;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
