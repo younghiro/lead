@@ -41,7 +41,7 @@ class ContactsController extends Controller
         // バリデーション
         $request->validate([
         'lastName' => 'required|max:20|string',
-        'firsttName' => 'required|max:20|string',
+        'firstName' => 'required|max:20|string',
         'lastNameKana' => 'required|max:20|string',
         'firstNameKana' => 'required|max:20|string',
         'email' => 'required|email',
@@ -59,7 +59,7 @@ class ContactsController extends Controller
 
         // 戻るボタンの場合リダイレクト処理
             return redirect()
-            ->route('inquiry')
+            ->route('inquiry_post')
             ->withInput($inputs);
             
         } else {

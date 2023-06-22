@@ -36,6 +36,7 @@ Route::get('/performance', function (){
 
 //入力ページ
 Route::get('/inquiry', 'App\Http\Controllers\ContactsController@index')->name('inquiry');
+Route::post('/inquiry', 'App\Http\Controllers\ContactsController@index')->name('inquiry_post');
 //確認フォームページ
 Route::post('/contact_confirm', 'App\Http\Controllers\ContactsController@confirm')->name('contact_confirm');
 //送信完了ページ

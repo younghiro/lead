@@ -57,7 +57,7 @@ text
                 @endif
             </div>
             <div class="form-detail">
-                <input type="text" id="firstName" name="firstName" class="u-form__control-text form-control" placeholder="花子" value="{{ old('firsttName') }}" maxlength="20" required="">
+                <input type="text" id="firstName" name="firstName" class="u-form__control-text form-control" placeholder="花子" value="{{ old('firstName') }}" maxlength="20" required="">
                 @if ($errors->has('firstName'))
                     <p class="error-message">{{ $errors->first('body') }}</p>
                 @endif
