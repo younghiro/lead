@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
     @yield('pageCss')
-    <link rel="icon" type="image/icon" sizes="16x16" href="{{ asset('../../public/images/company_profile/favicon.png') }}">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="{{ asset('images/lead_favicon.ico') }}">
     <title>@yield('title')</title>
 </head>
 <header>
