@@ -1,0 +1,289 @@
+html {
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+  
+  body {
+    background-color: ivory;
+    display: block;
+    color: #844a25;
+}
+  
+  h2 {
+    font-size: 18px;
+}
+  
+  a {
+    text-decoration: none;
+    color: #844a25;
+}
+  
+  a:hover {
+    opacity: .7;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    writing-mode: vertical-rl;
+    justify-content: space-between;
+  
+    position: relative;
+    left: 80%;
+}
+  
+  .list li {
+    font-size: 14px;
+    text-align: top;
+    list-style: none;
+    margin: 2px;
+    padding: 3px;
+}
+
+/* ここからハンバーガーメニューとheaderのレスポンシブデザインになります */
+
+.header {
+    margin: 0;
+    padding: 50px 0 0;
+    width: 100%;
+    display: block;
+}
+
+
+/* チェックボックス隠す */
+#menu-btn-check {
+    display: none;
+}
+
+@media (max-width: 768px) { /* 画面サイズが768px以下の場合 */
+
+/* middleの横幅を調整 */
+.middle {
+    width: auto;
+}
+
+/* listクラスのやつを横書きにする */
+.list {
+    writing-mode: horizontal-tb;
+    justify-content: center;
+    left: 0;
+}
+
+/* 三本線ボタンの実装 */
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #844a25;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+/* ×マークにする */
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/* チェックボックス隠す */
+#menu-btn-check {
+    display: none;
+}
+
+/* メニューの実装 */
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #844a25;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+/* メニューを画面外に */
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #844a25;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+/* ボタンタップ時にメニュー表示 */
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+}
+
+/* ここまで */
+
+/* ここからmain */
+
+/* 改行用 */
+.sma{
+    display: none;
+}
+
+/*スマートフォンでは有効（改行する）*/
+@media screen and (max-width:768px) {
+    .sma{
+        display: block;
+    }
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.enph{
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.form_exp{
+    text-align: center;
+    letter-spacing: .13rem;
+    margin: 60px auto;
+}
+
+.form_exp .red {
+    color: #cb0808;
+}
+
+.pc {
+    display: block;
+}
+
+@media screen and (max-width: 767px){
+
+    h1.form_exp.enph {
+        margin-top: 90px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .enph {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin-top: 90px;
+    }
+
+    .form_exp{
+        text-align: left;
+        margin: 30px auto;
+    }
+
+    p.form_exp {
+        margin-top: 50px;
+    }
+
+    .pc {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .pc {
+        display: none;
+    }
+}
+
+/* to top page button */
+.return_btn {
+    margin: 80px auto 0;
+}
+
+.return_btn .btn-1 {
+    width: 220px;
+    margin: 0 auto;
+    padding: 16px 0px 16px 0;
+}
+
+.btn-1 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 240px;
+    padding: 20px 20px 20px 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #a56238;
+    background-color: #a56238;
+    color: #fff;
+    cursor: pointer;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 767px){
+    .return_btn {
+        margin: 40px auto 0;
+    }
+}
