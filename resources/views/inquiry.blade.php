@@ -112,9 +112,7 @@ text
         <div class="c-button-list">
             <div class="button_frame">
                 <div class="button_detail">
-                    <a href="{{ route('contact_confirm')">
                     <button onclick="" type="submit" class="c-button__primary ">確認する</button>
-                    </a>
                 </div>
             </div>
         </div>
