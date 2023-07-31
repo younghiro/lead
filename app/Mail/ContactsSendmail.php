@@ -40,7 +40,7 @@ class ContactsSendmail extends Mailable
     {
         // メールの設定
         return $this
-            ->from('younghiromu112010ver2@gmail.com')
+            ->from('info@lead-aichi.com')
             ->subject('【株式会社リード】お問い合わせありがとうございます。')
             ->view('mail')
             ->with([
