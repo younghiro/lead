@@ -1,7 +1,7 @@
 @extends('parent')
 
 @section('pageCss')
-<link rel="stylesheet" href="{{ asset('css/inquiry.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/inquiry.css') }}">
 @endsection
 
 @section('title', 'お問合せ')
