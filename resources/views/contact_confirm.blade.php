@@ -1,7 +1,7 @@
 @extends('parent')
 
 @section('pageCss')
-<link rel="stylesheet" href="{{ asset('css/contact_confirm.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/contact_confirm.css') }}">
 @endsection
 
 @section('title', 'お問合せ確認画面')
