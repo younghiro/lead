@@ -8,6 +8,15 @@
 以下の内容でお問い合わせを受け付けいたしました。<br>
 担当者よりご連絡いたしますので,今しばらくお待ちくださいませ。<br>
 <br>
+■氏名■<br>
+{!! $lastName !!}　{!! $firstName !!}様<br>
+<br>
+■氏名（カナ）■<br>
+{!! $lastNameKana !!}　{!! $firstNameKana !!}様<br>
+<br>
+■お客様メールアドレス■<br>
+{!! $email !!}様<br>
+<br>
 ■お問い合わせ内容■<br>
 {!! nl2br($content) !!}<br>
 <br>
