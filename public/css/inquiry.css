@@ -5,15 +5,10 @@ html {
 }
   
   body {
-    width: 100%;
-    margin: 0;
     background-color: ivory;
     display: block;
     color: #844a25;
 }
-    p {
-        margin: 0;
-    }
   
   h2 {
     font-size: 18px;
@@ -195,12 +190,7 @@ html {
     }
 }
 
-*,::before, ::after {
-    box-sizing: border-box;
-    background-repeat: no-repeat;
-}
-
-.inquiry_content {
+body {
     width: 90%;
     margin: 0 auto;
 }
@@ -246,7 +236,6 @@ p.h1-explanation {
 form{
     width: 90%;
     margin: 0 auto;
-    padding-bottom: 70px;
 }
 
 .flex {
