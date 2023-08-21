@@ -5,9 +5,15 @@ html {
 }
   
   body {
+    width: 100%;
+    margin: 0;
     background-color: ivory;
     display: block;
     color: #844a25;
+}
+
+p {
+    margin: 0;
 }
   
   h2 {
@@ -191,7 +197,7 @@ html {
 }
 
 body {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -361,6 +367,21 @@ textarea {
 
 /* confirmation_form */
 
+.contact_confirm_sentences {
+    width: 90%;
+    margin: 20px auto;
+
+}
+
+@media (max-width: 768px) { /* 画面サイズが768px以下の場合 */
+
+    .contact_confirm_sentences{
+        margin: 10px auto;
+    }
+}
+
+
+
 .confirmation_name {
     margin-right: 0.5rem!important;
     display: inline-block;
@@ -387,10 +408,6 @@ textarea {
         flex-direction: row-reverse!important;
         justify-content: center!important;
     }
-}
-
-.button-margin{
-    
 }
 
 .contact-explanation{

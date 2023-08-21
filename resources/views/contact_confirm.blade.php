@@ -1,7 +1,11 @@
 @extends('parent')
 
 @section('pageCss')
+@if(config('app.env') === 'production')
 <link rel="stylesheet" href="{{ secure_asset('css/contact_confirm.css') }}">
+    @else
+    <link rel="stylesheet" href="{{ asset('css/contact_confirm.css') }}">
+    @endif
 @endsection
 
 @section('title', 'お問合せ確認画面')
@@ -14,9 +18,10 @@
 @endsection
 
 @section('main')
-
-<h1>お問い合わせ確認</h1>
-<p class="contact_explanation">入力情報をご確認のうえ、「送信する」をクリックしてください。</p>
+<div class="contact_confirm_sentences">
+    <h1>お問い合わせ確認</h1>
+    <p class="contact_explanation">入力情報をご確認のうえ、「送信する」をクリックしてください。</p>
+</div>
 <form method="POST" action="{{ route('send') }}">
 @csrf
     <div class="flex">
