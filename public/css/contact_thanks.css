@@ -5,9 +5,20 @@ html {
 }
   
   body {
+    width: 100%;
+    margin: 0;
     background-color: ivory;
     display: block;
     color: #844a25;
+}
+
+p {
+    margin: 0;
+}
+
+*,::before, ::after {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
 }
   
   h2 {
@@ -255,7 +266,7 @@ html {
 
 /* to top page button */
 .return_btn {
-    margin: 80px auto 0;
+    margin: 80px auto ;
 }
 
 .return_btn .btn-1 {
