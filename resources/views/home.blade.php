@@ -52,6 +52,32 @@
             </div>
         </div>
         <!-- elements in the top -->
+        <div class="sp">
+            <p class="sp_header_1">愛知・岐阜の温水器屋さん</p>
+            <p class="sp_header_2">エコキュート、温水器の販売・取り付け・修理</p>
+            <p class="sp_header_3">また、リフォームを行っております。</p>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 400 400" fill="none">
+                <rect width="400" height="400" fill="white"/>
+                <rect x="30" y="30" width="340" height="340" fill="white" stroke="#D9D9D9" stroke-width="10"/>
+                <rect width="40" height="250" transform="matrix(-1 0 0 1 149 75)" fill="#D9D9D9"/>
+                <rect width="32" height="200" transform="matrix(0 -1 -1 0 314 325)" fill="#D9D9D9"/>
+            </svg>
+            <div class="sp_subjects">
+                <p class="sp_subjects_space">365日対応</p>
+                <p class="sp_subjects_space">地域密着</p>
+                <p>自社施工・安心・最安値</p>
+            </div>
+            <!-- <svg class="scroll" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 300 300" fill="none">
+                <rect width="300" height="300" fill="white"/>
+                <rect x="148.172" y="227.096" width="120" height="30" rx="15" transform="rotate(-135.908 148.172 227.096)" fill="#A56238"/>
+                <rect x="126.764" y="206.113" width="120" height="30" rx="15" transform="rotate(-45.908 126.764 206.113)" fill="#A56238"/>
+            </svg> -->
+            <svg class="arrows">
+              <path class="a1" d="M0 0 L25 32 L50 0"></path>
+              <path class="a2" d="M0 20 L25 52 L50 20"></path>
+              <path class="a3" d="M0 40 L25 72 L50 40"></path>
+            </svg>
+        </div>
     </header>
     <main>
         <div class="up">
