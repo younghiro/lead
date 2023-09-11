@@ -34,9 +34,30 @@ li {
   position: relative;
 }
 
+@media screen and (min-width: 420px) {
+  .header_img {
+    display: none;
+  }
+
+  .sp {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .header {
-    background-image: url(../images/lead_home_header_sp.png);
+    background-image: none;
+    background-color: white;
+  }
+
+  .header_img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/leadHP.home.jpg);
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: inline-block;
   }
 
   .header_title{
@@ -51,14 +72,125 @@ li {
     display: none;
   }
 
+  .top_main {
+    position: relative;
+  }
+
   .header_sp1 {
     color: #a56238 !important;
-    top: 25px !important;
-    left: 30px !important;
+    font-size: 20px;
+    padding-top: 25px ;
+    padding-left: 30px;
+  }
+
+  .sp {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .sp_header_1 {
+    font-size: 18px;
+    letter-spacing:0.35em;
+  }
+
+  .sp_header_2 {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+
+  .sp_header_3 {
+    font-size: 12px;
+  }
+  
+  .logo {
+    margin: 20px;
+
+    /* animation */
+    animation-name: fadeInAnime;
+    animation-fill-mode:backwards;
+    animation-duration:3s;
+    animation-timing-function:ease;
+    animation-delay: 0.5s;
+    animation-direction:normal;
+  }
+
+  @keyframes fadeInAnime{
+    0% {
+      opacity: 0.1;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .sp_subjects {
+    font-size: 20px;
+    color: #a56238;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+
+  .sp_subjects_space {
+    letter-spacing: 0.3rem;
+    padding-bottom:3px;
+  }
+
+  .scroll {
+    margin: 50px;
+  }
+  .arrows {
+    margin-top: 50px;
+    width: 50px;
+    height: 72px;
+  }
+  
+  .arrows path {
+    stroke: black;
+    fill: transparent;
+    stroke-width: 2px;  
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+    animation-delay:-1.3s;
+    -webkit-animation-delay:-1.3s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a2 {
+    animation-delay:-0.8s;
+    -webkit-animation-delay:-0.8s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a3 { 
+    animation-delay:0s;
+    -webkit-animation-delay:0s; /* Safari 和 Chrome */
   }
 }
 
 @media screen and (min-width : 420px) and (max-width : 820px){
+  
+  .header {
+    height: 100vh;
+  }
+  
   .header_title {
     font-size: 27px !important;
     top: 40% !important;
@@ -111,9 +243,8 @@ li {
 
 .header_sp1 {
   font-size: 20px;
-  position: absolute;
-  top: 15px;
-  left: 15px;
+  padding-top: 25px;
+  padding-left: 25px;
 }
 
 .top_bottom {
@@ -486,8 +617,8 @@ nav {
       top: 10px;
       right: 10px;
       display: flex;
-      height: 60px;
-      width: 60px;
+      height: 55px;
+      width: 55px;
       justify-content: center;
       align-items: center;
       z-index: 90;
