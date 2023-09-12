@@ -11,10 +11,10 @@
 @section('title', '会社概要')
 
 @section('sub')
-    <li><a href="{{ route('flow') }}">ホーム</a></li>
-    <li><a href="{{ route('performance') }}">サービスの流れ</a></li>
-    <li><a href="{{ route('inquiry') }}">施工実績</a></li>
-    <li><a href="{{ route('company_profile') }}">お問合せ</a></li>
+    <li><a href="{{ route('home') }}">ホーム</a></li>
+    <li><a href="{{ route('flow') }}">サービスの流れ</a></li>
+    <li><a href="{{ route('performance') }}">施工実績</a></li>
+    <li><a href="{{ route('inquiry') }}">お問合せ</a></li>
 @endsection
 
 @section('main')
