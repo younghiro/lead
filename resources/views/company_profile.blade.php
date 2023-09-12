@@ -1,31 +1,23 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ secure_asset('css/sanitize.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('css/company_profile.css') }}">
-    <link rel="icon" type="image/icon" sizes="16x16" href="{{ secure_asset('images/company_profile/favicon.png') }}">
-    <title>株式会社リード</title>
-</head>
-<header>
-    <!-- elements at the top -->
-    <div class="humburger-menu">
-        <input type="checkbox" id="menu-btn-check">
-        <label for="menu-btn-check" class="menu-btn"><span></span></label>
-        <div class="menu-content">
-            <ul class="list">
-                <li><a href="{{ route('home') }}">ホーム</a></li>
-                <li><a href="{{ route('flow') }}">サービスの流れ</a></li>
-                <li><a href="{{ route('performance') }}">施工実績</a></li>
-                <li><a href="{{ route('inquiry') }}">お問合せ</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- elements in the top -->
-</header>
-<body>
+@extends('parent')
+
+@section('pageCss')
+    @if(config('app.env') =='production')
+        <link rel="stylesheet" href="{{ secure_asset('css/company_profile.css') }}">
+    @else
+        <link rel="stylesheet" href="{{ asset('css/company_profile.css') }}">
+    @endif
+@endsection
+
+@section('title', '会社概要')
+
+@section('sub')
+    <li><a href="{{ route('flow') }}">ホーム</a></li>
+    <li><a href="{{ route('performance') }}">サービスの流れ</a></li>
+    <li><a href="{{ route('inquiry') }}">施工実績</a></li>
+    <li><a href="{{ route('company_profile') }}">お問合せ</a></li>
+@endsection
+
+@section('main')
     <!-- elements in the left -->
     <div class="left">
         <div class="left-content">
@@ -116,6 +108,4 @@
         </div>
     </div>
     <!-- elements in the middle -->
-    
-</body>
-</html>
+@endsection

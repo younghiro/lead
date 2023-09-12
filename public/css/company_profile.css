@@ -5,9 +5,14 @@ html {
 }
 
 body {
+  margin: 0;
   background-color: ivory;
   display: block;
   color: #844a25;
+}
+
+p {
+  margin: 0;
 }
 
 h2 {
@@ -32,7 +37,7 @@ a:hover {
 
 .left {
   width: 20%;
-  height: 300px;
+  height: 150px;
   display: block;
 
   position: relative;
@@ -40,15 +45,30 @@ a:hover {
 }
 
 .middle {
-  padding: 10px 10px 10px;
+  padding: 10px 0px 10px 100px;
   width: 70%;
   display: block;
 
   position: relative;
-  bottom: 300px;
+  bottom: 150px;
   left: 250px;
 }
 
+@media screen and (min-width : 420px) and (max-width :820px) {
+
+  .middle {
+    left: 200px;
+  }
+
+}
+
+@media screen and (max-width :820px) {
+
+  .middle {
+    padding: 10px;
+  }
+
+}
 .left-content h3 {
   color: #844a25;
   text-align: center;
@@ -145,7 +165,7 @@ a:hover {
 
 .detail-list dt {
   margin-bottom: 10px;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid #a7a2a2;
   font-size: 20px;
   font-weight: bold;
 }
@@ -171,7 +191,13 @@ a:hover {
     margin-bottom: 0;
     padding: 10px 0;
     width: 71%;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid #a7a2a2;
+  }
+}
+
+@media print, screen and (max-width: 420px) {
+  .detail-list dd {
+    margin: 5px auto;
   }
 }
 
@@ -195,6 +221,7 @@ a:hover {
   .middle {
     width: 100%; /* コンテンツを100%に広げる */
     left: auto;
+    bottom: 80px;
   }
 }
 
