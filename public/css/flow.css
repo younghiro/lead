@@ -1,0 +1,387 @@
+html {
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: "YuGothic", "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+  
+  body {
+    width: 100%;
+    margin: 0;
+    background-color: ivory;
+    display: block;
+    color: #844a25;
+}
+
+p {
+    margin: 0;
+}
+  
+  h2 {
+    font-size: 18px;
+}
+  
+  a {
+    text-decoration: none;
+    color: #844a25;
+}
+  
+  a:hover {
+    opacity: .7;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    writing-mode: vertical-rl;
+    justify-content: space-between;
+  
+    position: relative;
+    left: 80%;
+}
+  
+  .list li {
+    font-size: 14px;
+    text-align: top;
+    list-style: none;
+    margin: 2px;
+    padding: 3px;
+}
+
+/* ここからハンバーガーメニューとheaderのレスポンシブデザインになります */
+
+.header {
+    margin: 0;
+    padding: 50px 0 0;
+    width: 100%;
+    display: block;
+}
+
+
+/* チェックボックス隠す */
+#menu-btn-check {
+    display: none;
+}
+
+@media (max-width: 768px) { /* 画面サイズが768px以下の場合 */
+
+/* middleの横幅を調整 */
+.middle {
+    width: auto;
+}
+
+/* listクラスのやつを横書きにする */
+.list {
+    writing-mode: horizontal-tb;
+    justify-content: center;
+    left: 0;
+}
+
+/* 三本線ボタンの実装 */
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #844a25;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+/* ×マークにする */
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/* チェックボックス隠す */
+#menu-btn-check {
+    display: none;
+}
+
+/* メニューの実装 */
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #844a25;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+/* メニューを画面外に */
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #844a25;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+/* ボタンタップ時にメニュー表示 */
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+}
+
+/* ここまで */
+
+/* 改行用 */
+.sma{
+    display: none;
+}
+
+/*スマートフォンでは有効（改行する）*/
+@media screen and (max-width:840px) {
+    .sma{
+        display: block;
+    }
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ここからmain */
+
+.message {
+    width: 75%;
+    margin: 100px auto 50px auto;
+}
+
+.message_design {
+    background-color: #fff;
+    padding: 10px;
+    border: solid 3px #844a25;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+
+.message_design2 {
+    padding: 0.5em 1em;
+    margin: 0 1rem 1rem 0;
+}
+
+.message h2 {
+    margin: 1rem 0;
+    color: #E26B5D;
+    font-size: 2rem;
+}
+.message .message_design p {
+    text-align: left;
+    padding: 10px 0 ;
+    color: black;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:840px) {
+
+    .message {
+        margin: 50px auto ;
+    }
+    .message h2 {
+        display: none;
+    }
+
+    .message .message_design p {
+        font-size: 20px;
+    }
+
+    .message_design2 {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .message .message_design p {
+        font-size: 13px;
+    }
+}
+/* botton */
+
+.botton {
+    margin: 40px auto;
+} 
+
+.cta_btn05 {
+    font-weight: bold; /* 文字の太さ */
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1em 2em 1em calc(5em - 15px);
+    transition: 0.3s;
+    text-decoration: none;
+    color: #fff; /* 文字色 */
+    border-radius: 0.5rem;
+    background: #45B173; /* 背景色 */
+    box-shadow: 0 5px 0 #19934e;
+  }
+  
+  .cta_btn05 p {
+    margin: 0;
+  }
+
+  .cta_btn05 .cta_btn05_copy {
+    position: absolute;
+    bottom: 0.5em;
+    left: -10px;
+    display: inline-block;
+    width: 5em;
+    height: 5em;
+    line-height: 5em;
+    text-align: center;
+    color: #45B173;
+    font-size: 80%;
+    font-weight: bold;
+    background: #fff;
+    border: 3px solid #45B173;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transform: rotate(-10deg);
+  }
+
+  .cta_btn05 .cta_btn05_copy::before {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    right: -10px;
+    border: 9px solid transparent;
+    border-left: 15px solid #FFF;
+    z-index: 0;
+    transform: rotate(45deg);
+  }
+  
+  /* マウスオーバーした際のデザイン */
+  .cta_btn05:hover {
+    transform: translate(0, 3px);
+    background: #45B173; /* 背景色 */
+    box-shadow: 0 2px 0 #19934e;
+  }
+
+.flow_design {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flow {
+    padding-left: 0;
+    border-bottom: solid 1px #E1E8ED;
+  }
+  
+  .flow > li {
+    list-style-type: none;
+    display: flex;
+    padding: 20px 0;
+    border-top: solid 1px #E1E8ED;
+  }
+  
+  .flow > li dl dt {
+    font-size: 1.2em;
+    line-height: 2;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .flow > li .icon {
+    line-height: 1;
+    font-size: 2em;
+    font-weight: bold;
+    color: #E26B5D;
+    text-align: center;
+    width: 70px;
+    position: relative;
+    margin-top: 0;
+  }
+  
+  .flow > li .icon::before {
+    content: 'STEP';
+    font-size: 0.3em;
+    display: block;
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+  }
+  
+  .flow > li .icon::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: calc(100% - 40px);
+    background-color: #858585;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    margin: auto;
+  }
+  
+  .flow > li dl dd {
+    margin: 0;
+  }
+  
+  .flow > li dl {
+    width: calc(100% - 70px);
+    margin-top: 0.8em;
+  }
+  
